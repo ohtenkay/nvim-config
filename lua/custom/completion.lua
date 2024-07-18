@@ -3,6 +3,7 @@ vim.opt.shortmess:append 'c'
 
 -- See `:help cmp`
 local cmp = require 'cmp'
+local lspkind = require 'lspkind'
 local luasnip = require 'luasnip'
 luasnip.config.setup {
   updateevents = 'TextChanged,TextChangedI',
@@ -11,8 +12,6 @@ luasnip.config.setup {
 for _, ft_path in ipairs(vim.api.nvim_get_runtime_file('lua/custom/snippets/*.lua', true)) do
   loadfile(ft_path)()
 end
-
-local lspkind = require 'lspkind'
 
 cmp.setup {
   formatting = {
