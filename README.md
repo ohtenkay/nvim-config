@@ -10,3 +10,5 @@ This is my personal neovim configuration. It is a work in progress and I am cons
 - noice.nvim
 - nvim-bqf
 - copilot.lua
+- lazygit.nvim
+- nvim-dap
