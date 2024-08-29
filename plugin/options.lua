@@ -50,11 +50,5 @@ opt.splitbelow = true
 opt.list = true
 opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
--- Show which line your cursor is on
-opt.cursorline = true
-
 -- Minimal number of screen lines to keep above and below the cursor.
 opt.scrolloff = 10
-
--- Don't have `o` add a comment
-opt.formatoptions:remove 'o'
