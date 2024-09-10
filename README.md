@@ -4,11 +4,7 @@ This is my personal neovim configuration. It is a work in progress and I am cons
 
 ## Plugins to try out
 - flash.nvim
-- oil.nvim
 - harpoon
 - which-key.nvim
 - noice.nvim
 - nvim-bqf
-- copilot.lua
-- lazygit.nvim
-- nvim-dap
