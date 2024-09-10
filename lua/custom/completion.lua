@@ -84,3 +84,9 @@ cmp.setup.filetype({ 'sql' }, {
     { name = 'buffer' },
   },
 })
+
+cmp.setup.filetype({ 'plantuml' }, {
+  sources = {
+    { name = 'buffer' },
+  },
+})
