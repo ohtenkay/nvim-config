@@ -5,6 +5,8 @@ return {
       'williamboman/mason.nvim',
       'williamboman/mason-lspconfig.nvim',
       'WhoIsSethDaniel/mason-tool-installer.nvim',
+      'nvim-java/nvim-java',
+
       { 'j-hui/fidget.nvim', opts = {} },
 
       -- `neodev` configures Lua LSP for your Neovim config, runtime and plugins
@@ -147,6 +149,7 @@ return {
         hyprls = {
           filetypes = { 'hyprlang' },
         },
+        elixirls = {},
       }
 
       -- Ensure the servers and tools above are installed
@@ -162,8 +165,6 @@ return {
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
-        'isort',
-        'black',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -176,6 +177,10 @@ return {
             -- certain features of an LSP (for example, turning off formatting for tsserver)
             server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
             require('lspconfig')[server_name].setup(server)
+          end,
+          ['jdtls'] = function()
+            require('java').setup {}
+            require('lspconfig').jdtls.setup {}
           end,
         },
       }
