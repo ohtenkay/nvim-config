@@ -2,7 +2,15 @@ return {
   {
     'neovim/nvim-lspconfig',
     dependencies = {
-      'williamboman/mason.nvim',
+      {
+        'williamboman/mason.nvim',
+        opts = {
+          registries = {
+            'github:nvim-java/mason-registry',
+            'github:mason-org/mason-registry',
+          },
+        },
+      },
       'williamboman/mason-lspconfig.nvim',
       'WhoIsSethDaniel/mason-tool-installer.nvim',
       'nvim-java/nvim-java',
@@ -150,6 +158,14 @@ return {
           filetypes = { 'hyprlang' },
         },
         elixirls = {},
+        denols = {
+          settings = {
+            deno = {
+              lint = true,
+              unstable = true,
+            },
+          },
+        },
       }
 
       -- Ensure the servers and tools above are installed

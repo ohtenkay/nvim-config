@@ -52,3 +52,7 @@ opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
 -- Minimal number of screen lines to keep above and below the cursor.
 opt.scrolloff = 10
+
+vim.g.markdown_fenced_languages = {
+  ts = 'typescript',
+}
