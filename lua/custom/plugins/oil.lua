@@ -10,10 +10,15 @@ return {
           ['<C-l>'] = false,
           ['<C-k>'] = false,
           ['<C-j>'] = false,
-          ['<M-h>'] = 'actions.select_split',
+        },
+        win_options = {
+          signcolumn = 'yes',
         },
         view_options = {
           show_hidden = true,
+          is_always_hidden = function(name, _)
+            return vim.startswith(name, '..')
+          end,
         },
       }
 
