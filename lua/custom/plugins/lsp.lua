@@ -130,7 +130,7 @@ return {
           },
         },
         -- pyright = {},
-        -- rust_analyzer = {},
+        rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -166,6 +166,7 @@ return {
             },
           },
         },
+        svelte = {},
       }
 
       -- Ensure the servers and tools above are installed
@@ -181,6 +182,7 @@ return {
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
+        'codelldb', -- Used for debugging Rust code
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -198,6 +200,7 @@ return {
             require('java').setup {}
             require('lspconfig').jdtls.setup {}
           end,
+          ['rust_analyzer'] = function() end,
         },
       }
     end,
