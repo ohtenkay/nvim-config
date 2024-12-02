@@ -56,3 +56,5 @@ opt.scrolloff = 10
 vim.g.markdown_fenced_languages = {
   ts = 'typescript',
 }
+
+opt.laststatus = 3
