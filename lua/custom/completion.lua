@@ -19,7 +19,13 @@ cmp.setup {
     fields = { 'abbr', 'kind', 'menu' },
     format = lspkind.cmp_format {
       mode = 'symbol_text',
-      show_labelDetails = true, -- show labelDetails in menu. Disabled by default
+      menu = {
+        buffer = '[Buffer]',
+        nvim_lsp = '[LSP]',
+        luasnip = '[LuaSnip]',
+        nvim_lua = '[Lua]',
+        latex_symbols = '[Latex]',
+      },
     },
   },
   snippet = {
