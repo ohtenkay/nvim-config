@@ -57,4 +57,6 @@ vim.g.markdown_fenced_languages = {
   ts = 'typescript',
 }
 
+opt.wrap = false
+
 opt.laststatus = 3
