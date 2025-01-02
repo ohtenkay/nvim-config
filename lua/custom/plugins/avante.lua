@@ -9,6 +9,11 @@ return {
     behaviour = {
       -- auto_suggestions = true,
     },
+    mappings = {
+      diff = {
+        cursor = 'cC',
+      },
+    },
   },
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
   build = 'make',
