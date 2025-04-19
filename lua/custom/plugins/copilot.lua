@@ -9,6 +9,11 @@ return {
           accept_word = '<M-l>',
         },
       },
+      copilot_model = 'gpt-4o-copilot',
+      filetypes = {
+        yaml = true,
+        markdown = true,
+      },
     },
     -- enabled = false,
   },

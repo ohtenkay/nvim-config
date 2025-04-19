@@ -1,17 +1,38 @@
 return {
   'yetone/avante.nvim',
+  -- enabled = false,
   event = 'VeryLazy',
   lazy = false,
   version = false, -- set this if you want to always pull the latest change
   opts = {
-    provider = 'copilot', -- Recommend using Claude
-    auto_suggestions_provider = 'copilot',
+    provider = 'copilot_claude', -- Recommend using Claude
+    auto_suggestions_provider = 'copilot_claude',
     behaviour = {
       -- auto_suggestions = true,
     },
     mappings = {
       diff = {
         cursor = 'cC',
+      },
+    },
+    vendors = {
+      copilot_claude = {
+        __inherited_from = 'copilot',
+        model = 'claude-3.7-sonnet',
+      },
+      copilot_claude_thinking = {
+        __inherited_from = 'copilot',
+        model = 'claude-3.7-sonnet-thought',
+        temperature = 1,
+        max_tokens = 20000,
+      },
+      copilot_o1 = {
+        __inherited_from = 'copilot',
+        model = 'o1',
+      },
+      copilot_o3_mini = {
+        __inherited_from = 'copilot',
+        model = 'o3-mini',
       },
     },
   },
