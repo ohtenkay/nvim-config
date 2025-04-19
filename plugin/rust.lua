@@ -7,6 +7,10 @@ vim.g.rustaceanvim = {
         cargo = {
           features = 'all',
         },
+        checkOnSave = {
+          command = 'clippy',
+          -- extraArgs = { '--', '-W', 'clippy::pedantic' },
+        },
       },
     },
   },
