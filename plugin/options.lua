@@ -60,3 +60,12 @@ vim.g.markdown_fenced_languages = {
 opt.wrap = false
 
 opt.laststatus = 3
+
+vim.g.python3_host_prog = vim.fn.expand '~/.virtualenvs/neovim/bin/python3'
+
+vim.diagnostic.config {
+  virtual_text = true,
+  -- virtual_lines = {
+  --   current_line = true,
+  -- },
+}
