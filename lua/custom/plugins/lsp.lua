@@ -8,6 +8,7 @@ return {
           registries = {
             'github:nvim-java/mason-registry',
             'github:mason-org/mason-registry',
+            'github:Crashdummyy/mason-registry',
           },
         },
       },
@@ -129,7 +130,18 @@ return {
             },
           },
         },
-        pyright = {},
+        pyright = {
+          settings = {
+            python = {
+              analysis = {
+                diagnosticSeverityOverrides = {
+                  reportUnusedExpression = 'none',
+                  reportArgumentType = 'none',
+                },
+              },
+            },
+          },
+        },
         rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --

@@ -1,5 +1,8 @@
 return {
   {
+    'nvim-treesitter/nvim-treesitter-textobjects',
+  },
+  {
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
     lazy = false,
@@ -27,6 +30,41 @@ return {
         additional_vim_regex_highlighting = { 'ruby' },
       },
       indent = { enable = true, disable = { 'ruby' } },
+      textobjects = {
+        move = {
+          enable = true,
+          set_jumps = false, -- you can change this if you want.
+          goto_next_start = {
+            --- ... other keymaps
+            [']c'] = { query = '@code_cell.inner', desc = 'next code block' },
+          },
+          goto_previous_start = {
+            --- ... other keymaps
+            ['[c'] = { query = '@code_cell.inner', desc = 'previous code block' },
+          },
+        },
+        select = {
+          enable = true,
+          lookahead = true, -- you can change this if you want
+          keymaps = {
+            --- ... other keymaps
+            ['ic'] = { query = '@code_cell.inner', desc = 'in block' },
+            ['ac'] = { query = '@code_cell.outer', desc = 'around block' },
+          },
+        },
+        -- swap = { -- Swap only works with code blocks that are under the same
+        --          -- markdown header
+        --     enable = true,
+        --     swap_next = {
+        --         --- ... other keymap
+        --         ["<leader>sbl"] = "@code_cell.outer",
+        --     },
+        --     swap_previous = {
+        --         --- ... other keymap
+        --         ["<leader>sbh"] = "@code_cell.outer",
+        --     },
+        -- },
+      },
     },
     config = function(_, opts)
       -- Prefer git instead of curl in order to improve connectivity in some environments
