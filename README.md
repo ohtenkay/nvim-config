@@ -6,9 +6,6 @@ maintainability.
 
 ## Plugins to try out
 
-- harpoon (or alternatives)
-- floaterm
-- which-key.nvim
 - undotree
 - noice.nvim
 - nvim-bqf
