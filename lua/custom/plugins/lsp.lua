@@ -3,16 +3,15 @@ return {
     'neovim/nvim-lspconfig',
     dependencies = {
       {
-        'williamboman/mason.nvim',
+        'mason-org/mason.nvim',
         opts = {
-          registries = {
-            'github:nvim-java/mason-registry',
-            'github:mason-org/mason-registry',
-            'github:Crashdummyy/mason-registry',
-          },
+          -- registries = {
+          --   'github:nvim-java/mason-registry',
+          --   'github:Crashdummyy/mason-registry',
+          -- },
         },
       },
-      'williamboman/mason-lspconfig.nvim',
+      'mason-org/mason-lspconfig.nvim',
       'WhoIsSethDaniel/mason-tool-installer.nvim',
       'nvim-java/nvim-java',
 
@@ -142,7 +141,7 @@ return {
             },
           },
         },
-        rust_analyzer = {},
+        -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:

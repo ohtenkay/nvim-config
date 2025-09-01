@@ -5,12 +5,13 @@ vim.g.rustaceanvim = {
       -- rust-analyzer language server configuration
       ['rust-analyzer'] = {
         cargo = {
-          features = 'all',
+          features = { 'algorithms-pyo3-bindings' },
         },
-        checkOnSave = {
+        check = {
           command = 'clippy',
           -- extraArgs = { '--', '-W', 'clippy::pedantic' },
         },
+        checkOnSave = true,
       },
     },
   },
