@@ -57,9 +57,6 @@ opt.wrap = false
 -- Needed for global status line
 opt.laststatus = 3
 
--- Prettier popup windows
-opt.winborder = 'rounded'
-
 -- Enable inline diagnostic
 vim.diagnostic.config {
   virtual_text = true,
