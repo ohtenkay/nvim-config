@@ -1,3 +1,7 @@
+-- Has to be set before loading lazy
+vim.g.mapleader = ' '
+vim.g.maplocalleader = '\\'
+
 local opt = vim.opt
 
 -- Make line numbers default
