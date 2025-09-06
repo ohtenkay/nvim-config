@@ -9,3 +9,8 @@ maintainability.
 - undotree
 - noice.nvim
 - nvim-bqf
+- treejs
+
+## Todos to figure out
+
+- make oil git status show in the statusline, not in the file name
