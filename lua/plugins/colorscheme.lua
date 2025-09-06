@@ -17,6 +17,7 @@ return {
         background = {
           dark = 'dragon',
         },
+        -- Dark completion menu
         overrides = function(colors)
           local theme = colors.theme
           return {

@@ -55,6 +55,9 @@ opt.scrolloff = 10
 -- Disable line wrap
 opt.wrap = false
 
+-- Needed for global status line
+opt.laststatus = 3
+
 -- Enable inline diagnostic
 vim.diagnostic.config {
   virtual_text = true,
