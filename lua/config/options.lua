@@ -16,7 +16,6 @@ opt.shiftwidth = 4
 opt.showmode = false
 
 -- Sync clipboard between OS and Neovim.
--- TODO: try disabling this and separating the two clipboards
 opt.clipboard = 'unnamedplus'
 
 -- Enable break indent
@@ -57,6 +56,9 @@ opt.wrap = false
 
 -- Needed for global status line
 opt.laststatus = 3
+
+-- Prettier popup windows
+opt.winborder = 'rounded'
 
 -- Enable inline diagnostic
 vim.diagnostic.config {

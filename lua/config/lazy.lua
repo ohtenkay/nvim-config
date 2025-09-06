@@ -24,4 +24,6 @@ require('lazy').setup {
   install = { colorscheme = { 'kanagawa' } },
   -- automatically check for plugin updates
   checker = { enabled = true },
+  -- disble notification when config files change
+  change_detection = { notify = false },
 }
