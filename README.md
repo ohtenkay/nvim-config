@@ -13,4 +13,4 @@ maintainability.
 
 ## Todos to figure out
 
-- make oil git status show in the statusline, not in the file name
+- make oil git status show in the signcolumn, not in the file name
