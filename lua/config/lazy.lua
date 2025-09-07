@@ -17,13 +17,13 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup {
   spec = {
-    -- import plugins
+    -- Import plugins
     { import = 'plugins' },
   },
-  -- colorscheme that will be used when installing plugins.
+  -- Colorscheme that will be used when installing plugins
   install = { colorscheme = { 'kanagawa' } },
-  -- automatically check for plugin updates
+  -- Automatically check for plugin updates
   checker = { enabled = true },
-  -- disble notification when config files change
+  -- Disble notification when config files change
   change_detection = { notify = false },
 }

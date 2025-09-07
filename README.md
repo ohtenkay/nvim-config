@@ -10,6 +10,7 @@ maintainability.
 - noice.nvim
 - nvim-bqf
 - treejs
+- trouble.nvim
 
 ## Todos to figure out
 
