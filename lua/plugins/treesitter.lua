@@ -9,7 +9,7 @@ return {
   {
     'nvim-treesitter/nvim-treesitter',
     lazy = false,
-    branch = 'master',
+    branch = 'master', -- TODO: switch to main after treesitter 1.0
     build = ':TSUpdate',
     opts = {
       ensure_installed = {
