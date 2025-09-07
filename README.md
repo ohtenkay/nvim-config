@@ -10,6 +10,12 @@ maintainability.
 - noice.nvim
 - nvim-bqf
 - trouble.nvim
+- avante.nvim
+- grug-far.nvim
+- harpoon or alternatives
+- dap and dap-ui
+- vim-test or neotest
+- dbee or dadbod
 
 ## Todos to figure out
 
