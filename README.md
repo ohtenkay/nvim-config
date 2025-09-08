@@ -16,6 +16,7 @@ maintainability.
 - dap and dap-ui
 - vim-test or neotest
 - dbee or dadbod
+- dial.nvim
 
 ## Todos to figure out
 
