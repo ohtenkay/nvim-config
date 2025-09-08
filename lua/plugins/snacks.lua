@@ -8,7 +8,7 @@ return {
     dashboard = { enabled = true },
     input = { enabled = true },
     quickfile = { enabled = true },
-    -- gitbrowse = { enabled = true },
+    gitbrowse = { enabled = true },
     lazygit = { enabled = true },
     -- picker = { enabled = true },
     -- notifier = { enabled = true },
