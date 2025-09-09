@@ -23,7 +23,13 @@ return {
   },
   keys = {
     -- Top Pickers & Explorer
-    -- { "<leader><space>", function() Snacks.picker.smart() end, desc = "Smart Find Files" },
+    {
+      '<leader><space>',
+      function()
+        Snacks.picker.smart()
+      end,
+      desc = 'Smart Find Files',
+    },
     -- { "<leader>,", function() Snacks.picker.buffers() end, desc = "Buffers" },
     -- { "<leader>/", function() Snacks.picker.grep() end, desc = "Grep" },
     -- { "<leader>:", function() Snacks.picker.command_history() end, desc = "Command History" },
@@ -71,13 +77,6 @@ return {
     -- { "gy", function() Snacks.picker.lsp_type_definitions() end, desc = "Goto T[y]pe Definition" },
     -- { "<leader>ss", function() Snacks.picker.lsp_symbols() end, desc = "LSP Symbols" },
     -- { "<leader>sS", function() Snacks.picker.lsp_workspace_symbols() end, desc = "LSP Workspace Symbols" },
-    -- Other
-    -- { "<leader>.",  function() Snacks.scratch() end, desc = "Toggle Scratch Buffer" },
-    -- { "<leader>S",  function() Snacks.scratch.select() end, desc = "Select Scratch Buffer" },
-    -- { "<leader>n",  function() Snacks.notifier.show_history() end, desc = "Notification History" },
-    -- { "<leader>bd", function() Snacks.bufdelete() end, desc = "Delete Buffer" },
-    -- { "<leader>cR", function() Snacks.rename.rename_file() end, desc = "Rename File" },
-    -- { "<leader>gB", function() Snacks.gitbrowse() end, desc = "Git Browse", mode = { "n", "v" } },
     {
       '<leader>lg',
       function()
