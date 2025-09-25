@@ -10,6 +10,15 @@ return {
       -- ['*'] = { 'global linter' },
       -- Use the "_" filetype to run linters on filetypes that don't have other linters configured, e.g. strip whitespace
       -- ['_'] = { 'fallback linter' },
+      typescript = { 'eslint_d' },
+      javascript = { 'eslint_d' },
+      javascriptreact = { 'eslint_d' },
+      typescriptreact = { 'eslint_d' },
+      css = { 'eslint_d' },
+      scss = { 'eslint_d' },
+      html = { 'eslint_d' },
+      json = { 'eslint_d' },
+      jsonc = { 'eslint_d' },
     },
   },
   config = function(_, opts)

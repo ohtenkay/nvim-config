@@ -18,6 +18,15 @@ return {
     formatters_by_ft = {
       lua = { 'stylua' },
       kotlin = { 'ktfmt' },
+      typescript = { 'prettierd' },
+      javascript = { 'prettierd' },
+      javascriptreact = { 'prettierd' },
+      typescriptreact = { 'prettierd' },
+      css = { 'prettierd' },
+      scss = { 'prettierd' },
+      html = { 'prettierd' },
+      json = { 'prettierd' },
+      jsonc = { 'prettierd' },
     },
     default_format_opts = {
       lsp_format = 'fallback',
