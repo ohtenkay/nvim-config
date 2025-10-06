@@ -53,6 +53,7 @@ return {
         end
       end
 
+      -- TODO: rempap in oil to close preveiw before opening picker
       -- Open parent directory in current window in preview mode
       vim.keymap.set('n', '-', '<CMD>Oil --preview<CR>', { desc = 'Open parent directory' })
     end,
