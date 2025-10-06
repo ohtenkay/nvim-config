@@ -9,7 +9,10 @@ return {
     input = { enabled = true },
     quickfile = { enabled = true },
     gitbrowse = { enabled = true },
-    lazygit = { enabled = true },
+    lazygit = {
+      enabled = true,
+      win = { width = 0, height = 0 },
+    },
     picker = {
       enabled = true,
       layout = {
