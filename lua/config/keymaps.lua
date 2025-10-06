@@ -12,3 +12,8 @@ set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rr
 
 -- Go to definition
 set('n', 'gd', vim.lsp.buf.definition, { desc = 'Go to [D]efinition' })
+
+-- Show hover documentation with a border
+set('n', 'K', function()
+  vim.lsp.buf.hover { border = 'rounded' }
+end, { desc = 'Hover Documentation with rounded border' })
