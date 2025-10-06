@@ -6,7 +6,6 @@ maintainability.
 
 ## Plugins to try out
 
-- undotree
 - noice.nvim
 - nvim-bqf
 - trouble.nvim
