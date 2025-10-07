@@ -20,20 +20,17 @@ return {
           builtin = false,
           cmd = {
             'delta',
+            '--file-style=omit',
+            '--hunk-header-style=omit',
             '--paging=never',
             '--syntax-theme',
             'Kanagawa Dragon',
           },
         },
       },
-      layout = {
-        preset = 'ivy_split',
-      },
+      layout = { preset = 'ivy_split' },
     },
-    words = {
-      enabled = true,
-      debounce = 40,
-    },
+    words = { enabled = true, debounce = 40 },
   },
   keys = {
     -- Searches
@@ -132,7 +129,7 @@ return {
     {
       '<leader>su',
       function()
-        Snacks.picker.undo { layout = 'ivy' }
+        Snacks.picker.undo { layout = { preset = 'ivy', layout = { height = 0.55 } } }
       end,
       desc = 'Undo History',
     },
@@ -176,14 +173,18 @@ return {
     {
       'gO',
       function()
-        Snacks.picker.lsp_symbols()
+        Snacks.picker.lsp_symbols { layout = 'right' }
       end,
       desc = 'LSP Symbols',
     },
     {
       'grO',
       function()
-        Snacks.picker.lsp_workspace_symbols()
+        Snacks.picker.lsp_workspace_symbols {
+          layout = { preset = 'right', layout = {
+            width = 0.5,
+          } },
+        }
       end,
       desc = 'LSP Workspace Symbols',
     },
