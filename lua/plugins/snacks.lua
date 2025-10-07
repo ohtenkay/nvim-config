@@ -14,6 +14,7 @@ return {
       win = { width = 0, height = 0 },
     },
     picker = {
+      enabled = true,
       previewers = {
         diff = {
           builtin = false,
@@ -25,7 +26,6 @@ return {
           },
         },
       },
-      enabled = true,
       layout = {
         preset = 'ivy_split',
       },
