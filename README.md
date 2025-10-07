@@ -16,6 +16,7 @@ maintainability.
 - vim-test or neotest
 - dbee or dadbod
 - dial.nvim
+- hardtime.nvim
 
 ## Todos to figure out
 
