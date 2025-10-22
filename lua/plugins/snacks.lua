@@ -133,6 +133,15 @@ return {
       end,
       desc = 'Undo History',
     },
+    {
+      '<leader>sn',
+      function()
+        Snacks.picker.files {
+          cwd = vim.fn.stdpath 'config',
+        }
+      end,
+      desc = 'Neovim Config',
+    },
     -- LSP
     {
       'gd',
