@@ -16,7 +16,7 @@ return {
   opts = {
     formatters_by_ft = {
       lua = { 'stylua' },
-      kotlin = { 'ktfmt' },
+      -- kotlin = { 'ktfmt' },
       typescript = { 'prettierd' },
       javascript = { 'prettierd' },
       javascriptreact = { 'prettierd' },
@@ -26,6 +26,7 @@ return {
       html = { 'prettierd' },
       json = { 'prettierd' },
       jsonc = { 'prettierd' },
+      svelte = { 'prettierd' },
     },
     default_format_opts = {
       lsp_format = 'fallback',
