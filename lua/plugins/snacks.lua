@@ -9,6 +9,7 @@ return {
     input = { enabled = true },
     quickfile = { enabled = true },
     gitbrowse = { enabled = true },
+    image = { enabled = true },
     lazygit = {
       enabled = true,
       win = { width = 0, height = 0 },
