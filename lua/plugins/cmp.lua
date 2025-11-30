@@ -48,5 +48,10 @@ return {
         show_on_keyword = true,
       },
     },
+    cmdline = {
+      keymap = {
+        ['<Right>'] = { 'select_and_accept' },
+      },
+    },
   },
 }
