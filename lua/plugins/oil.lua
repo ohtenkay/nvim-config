@@ -28,6 +28,9 @@ return {
           signcolumn = 'yes',
           winbar = '%!v:lua.get_oil_winbar()',
         },
+        confirmation = {
+          border = 'rounded',
+        },
         skip_confirm_for_simple_edits = true,
         watch_for_changes = true,
         view_options = {
