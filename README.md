@@ -9,14 +9,13 @@ Neovim when possible.
 
 - noice.nvim (mainly for the enhanced f and t montions)
 - nvim-bqf
-- avante.nvim
-- grug-far.nvim
+- avante.nvim or opencode integration
+- grug-far.nvim or some other way to do file and replace, maybe quicker.nvim
 - harpoon or alternatives (per branch file list)
-- dap and dap-ui
+- nvim-dap, nvim-dap-virtual-text and nvim-dap-view
 - vim-test or neotest
 - dbee or dadbod
 - dial.nvim
-- hardtime.nvim
 
 ## Todos to figure out
 
