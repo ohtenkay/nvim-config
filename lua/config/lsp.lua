@@ -1,6 +1,6 @@
 vim.lsp.enable {
   'lua_ls',
-  'kotlin_lsp',
+  -- 'kotlin_lsp',
   'ts_ls',
   'svelte',
   'tailwindcss',
