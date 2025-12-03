@@ -22,7 +22,7 @@ return {
         'vimdoc',
         'query',
         'html',
-        'latex',
+        -- 'latex',
         'yaml',
       },
       auto_install = true,
