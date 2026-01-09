@@ -8,10 +8,8 @@ Neovim when possible.
 ## Plugins to try out
 
 - noice.nvim (mainly for the enhanced f and t montions)
-- nvim-bqf
 - avante.nvim or opencode integration
-- grug-far.nvim or some other way to do file and replace, maybe quicker.nvim
-- harpoon or alternatives (per branch file list)
+- grug-far.nvim or some other way to do find and replace, maybe quicker.nvim and ripgrep
 - nvim-dap, nvim-dap-virtual-text and nvim-dap-view
 - vim-test or neotest
 - dbee or dadbod
