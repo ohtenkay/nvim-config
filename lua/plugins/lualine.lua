@@ -4,7 +4,7 @@ return {
   opts = {
     globalstatus = true,
     sections = {
-      lualine_x = { 'encoding', 'lsp_status', 'filetype' },
+      lualine_x = { 'encoding', 'lsp_status', 'filetype', 'grapple' },
     },
   },
 }
