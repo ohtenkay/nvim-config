@@ -4,4 +4,5 @@ vim.lsp.enable {
   'ts_ls',
   'svelte',
   'tailwindcss',
+  'nixd',
 }
