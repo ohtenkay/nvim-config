@@ -4,12 +4,11 @@ return {
   opts = {
     events = { 'BufWritePost', 'BufReadPost', 'InsertLeave' },
     linters_by_ft = {
-      -- lua = { 'luacheck' },
-      -- kotlin = { 'detekt' },
       -- Use the "*" filetype to run linters on all filetypes, e.g. spellchecker
       -- ['*'] = { 'global linter' },
       -- Use the "_" filetype to run linters on filetypes that don't have other linters configured, e.g. strip whitespace
       -- ['_'] = { 'fallback linter' },
+      -- lua = { 'luacheck' },
       typescript = { 'eslint_d' },
       javascript = { 'eslint_d' },
       javascriptreact = { 'eslint_d' },
@@ -19,6 +18,8 @@ return {
       html = { 'eslint_d' },
       json = { 'eslint_d' },
       jsonc = { 'eslint_d' },
+      haskell = { 'hlint' },
+      lhaskell = { 'hlint' },
     },
   },
   config = function(_, opts)
